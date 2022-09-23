@@ -13,4 +13,8 @@ How to Use
 2. Open your console
 3. Navigate to the directory and run the node (enter `node script.js`)
 
+References
+---
+1. https://www.tarot.com/tarot/cards
+
 Hope you enjoy!
