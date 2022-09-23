@@ -1,4 +1,4 @@
-# Tarot-Reader
+# Tarot Reader
 Welcome! 👋
 
 About this Project
@@ -13,4 +13,4 @@ How to Use
 2. Open your console
 3. Navigate to the directory and run the node
 
-Hope you enjoy!
+Hope you enjoy!🔮
