@@ -4,7 +4,7 @@ This project is a Portfolio project for the Codecademy Full Stack course. The go
 
 About this Project
 ----
-The Tarot Reader is a simple js program you can run in your local device's console. Running the program will reveal three cards that may or may provide you some insight and enlightenment.
+The Tarot Reader is a simple js program you can run in your local device's console. Running the program will reveal three cards that may or may not provide you some insight and enlightenment.
 
 How to Use
 ---
