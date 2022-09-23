@@ -10,7 +10,7 @@ How to Use
 ---
 1. Download the script.js file to your local device
 2. Open your console
-3. Navigate to the directory and run the node (enter `node script.js`)
+3. Navigate to the directory containing the file and run the node (enter `node script.js`)
 
 References
 ---
