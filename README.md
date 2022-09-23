@@ -1,5 +1,5 @@
 # Tarot Reader
-Welcome! 👋 
+Welcome! 👋 🔮
 This project is a Portfolio project for the Codecademy Full Stack course. The goal is to showcase what I have learned so far with JavaScript, Git, Github, CLI, and Node.js.
 
 About this Project
