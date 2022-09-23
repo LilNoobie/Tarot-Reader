@@ -5,62 +5,45 @@ function sleep(ms) {
 
 const readTarot = () => {
     //the whole deck
-    let cards = ["The Fool (Upright)", 
-        "The Magician (Upright)", 
-        "The High Priestess (Upright)", 
-        "The Empress (Upright)", 
-        "The Emperor (Upright)", 
-        "The Hierophant (Upright)", 
-        "The Lovers (Upright)", 
-        "The Chariot (Upright)", 
-        "Strength (Upright)", 
-        "The Hermit (Upright)", 
-        "Wheel of Fortune (Upright)", 
-        "Justice (Upright)", 
-        "The Hanged Man (Upright)", 
-        "Death (Upright)", 
-        "Temperance (Upright)", 
-        "The Devil (Upright)", 
-        "The Tower (Upright)", 
-        "The Star (Upright)", 
-        "The Moon (Upright)", 
-        "The Sun (Upright)", 
-        "Judgement (Upright)", 
-        "The World (Upright)", 
-        "The Fool (Reversed)", 
-        "The Magician (Reversed)", 
-        "The High Priestess (Reversed)", 
-        "The Empress (Reversed)", 
-        "The Emperor (Reversed)", 
-        "The Hierophant (Reversed)", 
-        "The Lovers (Reversed)", 
-        "The Chariot (Reversed)", 
-        "Strength (Reversed)", 
-        "The Hermit (Reversed)", 
-        "Wheel of Fortune (Reversed)", 
-        "Justice (Reversed)", 
-        "The Hanged Man (Reversed)", 
-        "Death (Reversed)", 
-        "Temperance (Reversed)", 
-        "The Devil (Reversed)", 
-        "The Tower (Reversed)", 
-        "The Star (Reversed)", 
-        "The Moon (Reversed)", 
-        "The Sun (Reversed)", 
-        "Judgement (Reversed)", 
-        "The World (Reversed)"]
+    let cards = ["The Fool", 
+    "The Magician", 
+    "The High Priestess", 
+    "The Empress", 
+    "The Emperor", 
+    "The Hierophant", 
+    "The Lovers", 
+    "The Chariot", 
+    "Strength", 
+    "The Hermit", 
+    "Wheel of Fortune", 
+    "Justice", 
+    "The Hanged Man", 
+    "Death", 
+    "Temperance", 
+    "The Devil", 
+    "The Tower", 
+    "The Star", 
+    "The Moon", 
+    "The Sun", 
+    "Judgement", 
+    "The World"];
 
     //choose three unique cards
     let randNum = [];
     while(randNum.length < 3){
-        let r = Math.floor(Math.random() * cards.length) + 1;
+        let r = Math.floor(Math.random() * cards.length);
         if(randNum.indexOf(r) === -1) randNum.push(r);
     };
 
-    //match the three random numbers to the deck
-    let cardOne = cards[randNum[0]];
-    let cardTwo = cards[randNum[1]];
-    let cardThree = cards[randNum[2]];
+    //upright or reversed
+    let orientation = ["(upright)", "(reversed)"];
+
+    //array of orientation
+    let randOrientation = [];
+    while(randOrientation.length < 3){
+        let o = Math.floor(Math.random() * orientation.length);
+        randOrientation.push(o);
+    };
 
     //return prediction
     console.log('Well, hello there.')
@@ -73,11 +56,11 @@ const readTarot = () => {
         .then(() => sleep(2000))
         .then(() => console.log('Here is what I have for you today:'))
         .then(() => sleep(2000))
-        .then(() => console.log(`Your first card: ${cardOne}`))
+        .then(() => console.log(`Your first card: ${cards[randNum[0]]} ${orientation[randOrientation[0]]}`))
         .then(() => sleep(2000))
-        .then(() => console.log(`Your second card: ${cardTwo}`))
+        .then(() => console.log(`Your second card: ${cards[randNum[1]]} ${orientation[randOrientation[1]]}`))
         .then(() => sleep(2000))
-        .then(() => console.log(`Your third card: ${cardThree}`))
+        .then(() => console.log(`Your third card: ${cards[randNum[2]]} ${orientation[randOrientation[2]]}`))
         .then(() => sleep(2000))
         .then(() => console.log(`Read about what your cards mean: https://www.tarot.com/tarot/cards`))
 };
