@@ -62,7 +62,7 @@ const readTarot = () => {
     let cardThree = cards[randNum[2]];
 
     //return prediction
-    console.log('Hello')
+    console.log('Well, hello there.')
     sleep(2000)
         .then(() => console.log('I see you have come to get some insight...'))
         .then(() => sleep(2000))
